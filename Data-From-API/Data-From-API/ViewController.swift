@@ -25,7 +25,6 @@ class ViewController: UIViewController {
             }
             var result: Response?
             do {
-                //Converting bytes from data to Response
                 result = try JSONDecoder().decode(Response.self, from: data)
             }
             catch {
